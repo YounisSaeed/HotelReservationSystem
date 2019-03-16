@@ -16,8 +16,7 @@ namespace HotelReservationSystem.Controllers
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
-            //younis
-
+            //wissam
             return View();
         }
 
@@ -27,9 +26,5 @@ namespace HotelReservationSystem.Controllers
 
             return View();
         }
-        //public string()
-        //{
-                
-        //}
     }
 }
