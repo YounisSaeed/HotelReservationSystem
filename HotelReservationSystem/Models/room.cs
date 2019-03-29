@@ -11,15 +11,16 @@ namespace HotelReservationSystem.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class room
     {
         public int id { get; set; }
-        public Nullable<System.DateTime> checkInDate { get; set; }
-        public Nullable<System.DateTime> checkOutDate { get; set; }
+        [Required]
         public string kind { get; set; }
+        [Required]
         public string r_view { get; set; }
-        public Nullable<int> bedNo { get; set; }
-        public Nullable<double> price { get; set; }
+        public int bedNo { get; set; }
+        public double price { get; set; }
     }
 }

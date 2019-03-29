@@ -21,8 +21,6 @@
             <PropertyRef Name="id" />
           </Key>
           <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="checkInDate" Type="date" />
-          <Property Name="checkOutDate" Type="date" />
           <Property Name="kind" Type="nvarchar" MaxLength="30" />
           <Property Name="r_view" Type="nvarchar" MaxLength="30" />
           <Property Name="bedNo" Type="int" />
@@ -46,7 +44,7 @@
           <Property Name="id" Type="int" Nullable="false" />
           <Property Name="typ" Type="nvarchar" MaxLength="30" />
         </EntityType>
-        <Association Name="FK__users__typID__1273C1CD">
+        <Association Name="FK__users__typID__4BAC3F29">
           <End Role="userType" Type="Self.userType" Multiplicity="0..1" />
           <End Role="users" Type="Self.users" Multiplicity="*" />
           <ReferentialConstraint>
@@ -63,7 +61,7 @@
           <EntitySet Name="room" EntityType="Self.room" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="users" EntityType="Self.users" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="userType" EntityType="Self.userType" Schema="dbo" store:Type="Tables" />
-          <AssociationSet Name="FK__users__typID__1273C1CD" Association="Self.FK__users__typID__1273C1CD">
+          <AssociationSet Name="FK__users__typID__4BAC3F29" Association="Self.FK__users__typID__4BAC3F29">
             <End Role="userType" EntitySet="userType" />
             <End Role="users" EntitySet="users" />
           </AssociationSet>
@@ -89,8 +87,6 @@
             <PropertyRef Name="id" />
           </Key>
           <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="checkInDate" Type="DateTime" Precision="0" />
-          <Property Name="checkOutDate" Type="DateTime" Precision="0" />
           <Property Name="kind" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
           <Property Name="r_view" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
           <Property Name="bedNo" Type="Int32" />
@@ -106,7 +102,7 @@
           <Property Name="pasword" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="phone" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
           <Property Name="addrss" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <NavigationProperty Name="userType" Relationship="Self.FK__users__typID__1273C1CD" FromRole="users" ToRole="userType" />
+          <NavigationProperty Name="userType" Relationship="Self.FK__users__typID__4BAC3F29" FromRole="users" ToRole="userType" />
         </EntityType>
         <EntityType Name="userType">
           <Key>
@@ -114,9 +110,9 @@
           </Key>
           <Property Name="id" Type="Int32" Nullable="false" />
           <Property Name="typ" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
-          <NavigationProperty Name="users" Relationship="Self.FK__users__typID__1273C1CD" FromRole="userType" ToRole="users" />
+          <NavigationProperty Name="users" Relationship="Self.FK__users__typID__4BAC3F29" FromRole="userType" ToRole="users" />
         </EntityType>
-        <Association Name="FK__users__typID__1273C1CD">
+        <Association Name="FK__users__typID__4BAC3F29">
           <End Role="userType" Type="Self.userType" Multiplicity="0..1" />
           <End Role="users" Type="Self.user" Multiplicity="*" />
           <ReferentialConstraint>
@@ -133,7 +129,7 @@
           <EntitySet Name="rooms" EntityType="Self.room" />
           <EntitySet Name="users" EntityType="Self.user" />
           <EntitySet Name="userTypes" EntityType="Self.userType" />
-          <AssociationSet Name="FK__users__typID__1273C1CD" Association="Self.FK__users__typID__1273C1CD">
+          <AssociationSet Name="FK__users__typID__4BAC3F29" Association="Self.FK__users__typID__4BAC3F29">
             <End Role="userType" EntitySet="userTypes" />
             <End Role="users" EntitySet="users" />
           </AssociationSet>
@@ -160,8 +156,6 @@
             <EntityTypeMapping TypeName="lightsDBModel.room">
               <MappingFragment StoreEntitySet="room">
                 <ScalarProperty Name="id" ColumnName="id" />
-                <ScalarProperty Name="checkInDate" ColumnName="checkInDate" />
-                <ScalarProperty Name="checkOutDate" ColumnName="checkOutDate" />
                 <ScalarProperty Name="kind" ColumnName="kind" />
                 <ScalarProperty Name="r_view" ColumnName="r_view" />
                 <ScalarProperty Name="bedNo" ColumnName="bedNo" />
