@@ -14,6 +14,7 @@ namespace HotelReservationSystem.Models
     
     public partial class user
     {
+        public int id { get; set; }
         public string username { get; set; }
         public Nullable<int> typID { get; set; }
         public string email { get; set; }

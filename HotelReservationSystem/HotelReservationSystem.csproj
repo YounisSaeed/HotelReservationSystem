@@ -172,17 +172,21 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\BundleConfig2.cs" />
+    <Compile Include="App_Start\BundleConfig3.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\FilterConfig2.cs" />
+    <Compile Include="App_Start\FilterConfig3.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\RouteConfig2.cs" />
+    <Compile Include="App_Start\RouteConfig3.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageAccountController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\Reg_logController.cs" />
     <Compile Include="Controllers\RoomController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -296,6 +300,10 @@
     <Content Include="Views\Contact\Index.cshtml" />
     <Content Include="Views\Room\Index.cshtml" />
     <Content Include="Views\Room\Create.cshtml" />
+    <Content Include="Views\Reg_log\Rgister.cshtml" />
+    <Content Include="Views\Reg_log\login.cshtml" />
+    <Content Include="Views\Reg_log\listEmp.cshtml" />
+    <Content Include="Views\Reg_log\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
