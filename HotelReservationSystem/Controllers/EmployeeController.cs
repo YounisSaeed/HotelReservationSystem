@@ -34,28 +34,6 @@ namespace HotelReservationSystem.Controllers
         {
             return View();
         }
-        [HttpPost]
-        public ActionResult Update(int id)
-        {
-
-            if (ModelState.IsValid)
-            {
-                
-                var emp = db.users.Single(m => m.typID == id);
-                var Em = db.users.ToList();
-                user = new user();
-                {
-                    emp = emp,
-                    Em = Em;
-
-                };
-                db.SaveChanges();
-                return View("Update", Em);
-            }
-
-            return RedirectToAction("Index");
-         
-          }
         public ActionResult Delete(int id)
         {
             var user = db.users.Single(c => c.typID == id);
