@@ -1,0 +1,51 @@
+﻿@model IEnumerable<HotelReservationSystem.Models.user>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pasword)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.phone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.addrss)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.userType.typ)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pasword)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.phone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.addrss)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.userType.typ)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.username }) |
+            @Html.ActionLink("Details", "Details", new { id=item.username }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.username })
+        </td>
+    </tr>
+}
+
+</table>

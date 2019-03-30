@@ -187,6 +187,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageAccountController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\Reg_logController.cs" />
     <Compile Include="Controllers\RoomController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -300,13 +301,23 @@
     <Content Include="Views\Contact\Index.cshtml" />
     <Content Include="Views\Room\Index.cshtml" />
     <Content Include="Views\Room\Create.cshtml" />
+<<<<<<< HEAD
+    <Content Include="Views\Reg_log\Rgister.cshtml" />
+    <Content Include="Views\Reg_log\login.cshtml" />
+    <Content Include="Views\Reg_log\listEmp.cshtml" />
+    <Content Include="Views\Reg_log\Index.cshtml" />
+=======
     <Content Include="Views\Employee\Create.cshtml" />
     <Content Include="Views\Employee\Details.cshtml" />
     <Content Include="Views\Employee\Index.cshtml" />
     <Content Include="Views\Employee\Update.cshtml" />
     <Content Include="Views\Employee\Delete.cshtml" />
+<<<<<<< HEAD
     <Content Include="Views\Room\Delete.cshtml" />
     <Content Include="Views\Room\Edit.cshtml" />
+=======
+>>>>>>> 9b262ddc8ebe41e22886d845e6fef06ace6bc35d
+>>>>>>> 0f1cf46aaf8253b8c978b545ae0e901cc08cbe4f
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
